@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+
 import Header from "./Componenets/Header/Header";
 import Button from "./Componenets/Button/Button";
 
@@ -7,13 +7,12 @@ function App() {
   const [todoValue, setTodoValue] = useState("");
   const [todos, setTodos] = useState([]);
 
-
   const addTodo = () => {
     if (todoValue.trim() !== "") {
       setTodos([...todos, todoValue]);
       setTodoValue("");
-    }else{
-      alert("Please Enter Value!!")
+    } else {
+      alert("Please Enter Value!!");
     }
   };
 
